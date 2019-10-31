@@ -1,0 +1,1 @@
+This folder contains binary files and the main entry point for the app

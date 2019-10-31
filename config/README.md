@@ -1,0 +1,1 @@
+Configuration for environments of the database. It also exposes the `Sequelize` module and the `sequelize` connection
