@@ -14,13 +14,17 @@ This project requieres:
 ## ⚙️ Setup
 * Run ```$ npm install```
 * If it does not exist already, create your database and verify it is up and running.
-* ** Important ** Update the contents of the `/.env` file according to your MySQL setup.
+* *Important* Update the contents of the `/.env` file according to your MySQL setup.
 * run ```$ npm run db:init```
 * Alternatively, you can find databse dump in the `/bin` folder.
 
+The app runs by default on port 9001
+
+
 
 ## 🔥 How to run this project
-* run ```$ npm run start```
+* Run ```$ npm run start```
+* You can also run `$ npm run debug` to see detailed info
 
 ## 📚 Reference
 
@@ -34,7 +38,14 @@ This project requieres:
 | DELETE | /tasks/<idTask>   | N/A                                                                                                | NONE                                                                                        | Authorization: Bearer <token> |
 | POST   | /matrix/findIndex | N/A                                                                                                |  ```{ "matrix": [1,3,5,6,10] "target": 9 } ```                                              | Authorization: Bearer <token> |
 
-** A sample Postman collection is available to import in the `bin` folder **
+*A sample Postman collection is available to import in the `bin` folder*
+
+## Generate passwords
+
+This project uses bcrypt to store user passwords. To generate a new one you can use:
+```
+$ node bin/generate_password <password>
+```
 
 
 ## TODOs
